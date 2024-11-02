@@ -9,6 +9,8 @@ const Container = styled.div`
   width: 100%;
   gap: 24px;
   width: 100%;
+
+  min-height: 80px;
 `;
 
 //select element
@@ -33,18 +35,17 @@ const Input = styled.input`
   padding: 0 24px;
 `;
 
+const TextArea = styled.textarea``;
+const Form = styled.form``;
 //Inputs component
 const Inputs = () => {
   return (
     <div>
-      {/* styled elements go here */}
       <Container>
         <Select>
-          <option>
-            <p>Human Resources</p>
-          </option>
+          <option>HR Reports</option>
         </Select>
-        <Input placeholder="Search reports..." />
+        <Input type="text" placeholder="Search reports..." />
       </Container>
     </div>
   );

@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 // Table data
 import tableData from "./assets/data";
+import Button from "./components/Button";
 
 const App_Header = styled.div`
   display: flex;
@@ -23,11 +24,7 @@ const App = () => {
   return (
     <div>
       <App_Container>
-        <App_Header>
-          <h2>Organization Reports</h2>
-        </App_Header>
-        <Inputs />
-        <Table data={tableData} />
+        <Button />
       </App_Container>
     </div>
   );

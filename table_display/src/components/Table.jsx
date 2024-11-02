@@ -30,28 +30,31 @@ const TD = styled.td`
   border-bottom: 1px solid gray;
 `;
 
+//main component
 const Table = ({ data }) => {
   return (
-    <Table_Container>
-      <THead>
-        <Tr>
-          <TH>Title</TH>
-          <TH>Type</TH>
-          <TH>Document Name</TH>
-          <TH>Date of Publication</TH>
-        </Tr>
-      </THead>
-      <tbody>
-        {data.map((row, index) => (
-          <Tr key={index}>
-            <TD>{row.title}</TD>
-            <TD>{row.type}</TD>
-            <TD>{row.documentName}</TD>
-            <TD>{row.dateOfPublication}</TD>
+    <div>
+      <Table_Container>
+        <THead>
+          <Tr>
+            <TH>Title</TH>
+            <TH>Type</TH>
+            <TH>Document Name</TH>
+            <TH>Date of Publication</TH>
           </Tr>
-        ))}
-      </tbody>
-    </Table_Container>
+        </THead>
+        <tbody>
+          {data.map((row, index) => (
+            <Tr key={index}>
+              <TD>{row.title}</TD>
+              <TD>{row.type}</TD>
+              <TD>{row.documentName}</TD>
+              <TD>{row.dateOfPublication}</TD>
+            </Tr>
+          ))}
+        </tbody>
+      </Table_Container>
+    </div>
   );
 };
 
